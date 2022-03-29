@@ -1,13 +1,17 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
-import { Home } from './src/pages/Home';
+import React, { useEffect } from "react";
+import { StatusBar } from "react-native";
+import { Home } from "./src/pages/Home";
+import SplashScreen from "react-native-splash-screen";
 
+export default function App() {
+    useEffect(() => {
+        SplashScreen.hide();
+    }, []);
 
-export default function App(){
-  return (
-    <>
-      <StatusBar barStyle="light-content" />
-      <Home/>
-    </>
-  )
+    return (
+        <>
+            <StatusBar barStyle="light-content" />
+            <Home />
+        </>
+    );
 }
