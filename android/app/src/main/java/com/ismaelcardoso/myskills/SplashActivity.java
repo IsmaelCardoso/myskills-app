@@ -1,4 +1,4 @@
-package com.myskills; // Altere para o seu pacote esta em AndroidManifest.xml
+package com.ismaelcardoso.myskills; // Altere para o seu pacote esta em AndroidManifest.xml
 
 import android.content.Intent;
 import android.os.Bundle;
